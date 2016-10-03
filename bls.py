@@ -11,8 +11,7 @@ json_data = json.loads(p.text)
 d_results = json_data['Results']  #Dictionary: seriesID: str, data: list of data by date
 l_series = d_results['series']    #List of Dictionaries
 
-timestr = time.strftime("%Y%m%d-%H%M%S")
-print timestr
+timestr = time.strftime("%Y%m%d-%H%M")
 
 makeheader = 'True'
 f=open('bls' + '-' + timestr + '.csv','w')
